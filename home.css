@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+/* Start */
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  position: fixed;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+
+/* ************* start************** */
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+#sec1{
+  background: url(front1.png) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+.flex{
+     display:flex;
+     justify-content: space-between;
+}
+#Services{
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #FCF9F7;
+}
+#Services h2{
+  margin-bottom:3rem;
+  font-size:2rem;
+  color: #1b1b1b;
+}
+#Services h2:hover{
+  text-decoration: underline;
+  transition:.5s;
+}
+#Services  .flex > div{
+  width: 30%;
+}
+#Services h4{
+  color:#1b1b1b;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+#Services p{
+margin-top: 1rem;
+}
+#Services span{
+  color:#1b1b1b;
+  font-size: 35px;
+}
+#Services .ser:hover{
+      background-color: white;
+  border-radius: 10px;
+  border: 1px solid #1b1b1b;
+  box-shadow: 1px 1px 6px #1b1b1b;
+  transition: .5s;
+  padding: 10px 10px 10px 10px;
+}
+/* *************end *************** */
+
+
+/* Contact */
+#contact{
+  background-color:#FCF9F7;
+  padding: 4rem 0 8rem;
+}
+#contact h2{
+  text-align: center;
+  margin-bottom: 4rem;
+}
+#contact h2:hover{
+  text-decoration: underline;
+  transition:.5s;
+}
+.contacts{
+  background-color: #fff;
+  padding: 3rem;
+  box-sizing: border-box;
+  width: 50%;
+}
+.contacts h3{
+  color: black;
+  margin-bottom: 2rem;
+  font-family: arial;
+}
+.contacts h3:hover{
+  text-decoration: underline;
+  transition:.5s;
+}
+.contacts label{
+  color: black;
+  margin-top: : 1rem;
+  display: block; 
+}
+.contacts input,
+.contacts textarea{
+  display: block;
+  border-radius: 20px;
+  padding: 15px;
+  border:1px solid lightgray;
+  width: 100%;
+  box-sizing: border-box;
+  height: 45px;
+  font-family: arial;
+  font-size: 1rem;
+  color: black;
+}
+.contacts textarea{
+  margin-bottom: 2rem;
+  height: 145px;
+  resize: none;
+}
+.contacts .send{
+  padding:1rem;
+  border-radius:10px;
+  font-size:15px;
+  background-color: #1b1b1b;
+  color: #FCF9F7;
+}
+.contacts .send:hover{
+  box-shadow: 1px 1px 5px black;
+  transition: .5s;
+  color: #1b1b1b;
+  background-color: #FCF9F7;
+}
+.address{
+  width:40% ;
+  background-color:#fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  height:300px;
+}
+.address label{
+  display: block;
+  font-weight: 200px;
+  margin-top: 2rem;
+}
+.address address{
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+.address a{
+  text-decoration: none;
+  color: orange;
+}
+.address a:hover{
+  text-decoration: underline;
+}
+
+/* conatct end */
+
+
+/* Footer start */
+footer{
+  background-color:#1b1b1b;
+  padding: 3rem 0;
+}
+footer .flex{
+  padding-bottom:2rem;
+  border-bottom: 1px solid #fff;
+}
+footer h5{
+  color:#FCF9F7;
+  font-weight: 300px;
+  margin-bottom:1rem;
+}
+footer .about{
+  width: 45%;
+}
+footer .about p{
+  width: 69%;
+  color: #FCF9F7;
+}
+footer .quick{
+  width: 25%;
+}
+footer .quick ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .quick ul li{
+  margin: 10px 0;
+}
+footer .quick ul li a{
+  text-decoration: none;
+  color: #FCF9F7;
+}
+footer small{
+  margin-top: 1rem;
+  font-size:1rem ;
+  display: block;
+  text-align: center;
+  color:#FCF9F7;
+}
+.container .icon{
+  display: flex;
+  justify-content: center;
+}
+
+.icon div{
+  font-size: 30px;
+  color: #FCF9F7;
+  margin: 10px;
+}
+/* Footer end */
+
+/* location start */
+#location{
+  background-color: #FCF9F7;
+  padding: 4rem 0 6rem;
+  text-align: center;
+}
+#location h2 {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+}
+#location h2:hover{
+  text-decoration: underline;
+  transition: .8s;
+}
+#location .flex > div{
+  width: 30%;
+  margin-top: 1rem;
+}
+#location .flex h4{
+  font-size: 1.5rem;
+  font-weight: 300px;
+  margin-bottom: 1rem;
+}
+#location .loc:hover{
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #1b1b1b;
+  box-shadow: 1px 1px 6px #1b1b1b;
+  transition: .5s;
+  padding: 10px 10px 10px 10px;
+}
+/* location end */
+
+/* media query start */
+@media (max-width:450px){
+  #sec1{
+    background: url(camera3.jpg) no-repeat;
+    background-size: cover;
+  }
+}

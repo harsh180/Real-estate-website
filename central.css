@@ -1,0 +1,54 @@
+@media (max-width:840px){
+  .container{
+   max-width:540px;
+  }
+  #contact .flex{
+    flex-wrap: wrap;
+  }
+  #contact .contacts{
+    width: 100%;
+    padding: 2rem;
+  }
+  #contact .address{
+    width: 100%;
+    margin-top: 2rem;
+  }
+  footer{
+    padding: 2rem 0;
+  }
+  footer .flex{
+    flex-wrap: wrap;
+  }
+  footer .flex > div {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  footer .about p{
+    width: 100%;
+    font-size: 1rem;
+  }
+  #Services .flex{
+    display: block;
+    margin-top: 0;
+  }
+  #Services .flex > div{
+    width: 100%;
+    margin-top: 2rem;
+  }
+  #Services .conatiner h2{
+    margin-top:0px;
+  }
+  #location .flex{
+    display: block;
+    margin-bottom:0;
+  }
+  #location .flex > div{
+    width:100%;
+    margin-top: 2rem;
+  }
+  #location .container h2{
+    margin-bottom: 1rem;
+  }
+}
+
+/* media query end */

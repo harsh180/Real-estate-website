@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<link rel="stylesheet" href="register.css">
+</head>
+<body>
+	<div class=" Header">LISTED.COM</div>
+<div class="center">
+	<div class="btn">
+		<a class="a1" href="#">Sign up</a>
+		<a class="a2" href="#">Login</a>
+	</div>
+	<div class="signup-form">
+	<div class="Header">Sign Up</div>
+	<div class="signup_error"></div>
+	<form action="home.html" name="SignupForm" method="post" onsubmit="return signupvalid();">
+		<input type="text" name="firstname" placeholder="Firstname" autocomplete="off">
+		<input class ="lstname" type="text" name="lastname" placeholder="lastname" autocomplete="off">
+		<input class ="email" type="text" name="email" placeholder="Email or Phone" autocomplete="off">
+		<input class ="email" type="password" name="password" placeholder="Password" autocomplete="off">
+		<input type="submit" value="Signup">
+	</form>
+	</div>
+	<div class="login-form">
+	<div class="Header1">Login</div>
+	<div class="login_error"></div>
+	<form action="home.html" name="loginForm" method="post" onsubmit="return loginvalid();">
+		<input class ="email" type="text" name="email_1" placeholder="Email or Phone" autocomplete="off">
+		<input class ="email" type="password" name="password_1" placeholder="Password" autocomplete="off">
+		<input  type="submit" value="Login">
+	</form>
+	</div>
+</div>
+<script type="text/javascript" src="register.js"></script>
+<script type="text/javascript" src="valid.js"></script>
+<script type="text/javascript" src="valid1.js"></script>
+</body>
+</html>
